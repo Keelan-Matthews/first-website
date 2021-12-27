@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Keelan Matthews 21549967-->
+    <head>
+        <title>Demon Slayer: Mugen Train - Home</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Keelan Matthews" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Favicon-->
+        <link rel="icon" href="media/images/favicon.ico" type="image/x-icon">
+
+        <!--CSS Link-->
+        <link href="css/style.css" type="text/css" rel="stylesheet"> 
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <h4>Demon Slayer-Mugen Train</h4>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <nav>     
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plot.html">Plot</a></li>
+                    <li><a href="gallery.html#trailer">Trailer</a></li>
+                    <li><a href="cast.html">Cast</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="merchandise.html">Merchandise</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+
+        <main>
+            <section>
+                <h1>Checkout</h1>
+
+                <form id="form" action="result.html" method="post">
+
+                    <div class="card">
+
+                        <fieldset class="contact-information">
+
+                            <div class="container">
+                                <legend>Contact information</legend>
+                            </div>
+                            
+                            <!--Email-->
+                            <div class="form-control" id="email-container">
+                                <input type="email" name="email" id="email" maxlength="30" placeholder="Email address" required />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="shipping-address">
+
+                            <div class="container">
+                                <legend>Shipping address*</legend>
+                                <p id="notice">
+                                    <small><strong>Please note that we currently only deliver to <em>South Africa</em></strong></small>
+                                </p>
+                            </div>
+
+                            <!--First name-->
+                            <div class="form-control" id="name-container">
+                                <input type="text" name="name" id="name" maxlength="15" placeholder="First name" required />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small>
+                            </div>
+                            
+                            <!--Last name-->
+                            <div class="form-control" id="surname-container">
+                                <input type="text" name="surname" id="surname" maxlength="20" placeholder="Last name" required />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small> 
+                            </div>
+                            
+                            <!--Address-->
+                            <div class="form-control" id="address-container">
+                                <input type="text" name="address" id="address" placeholder="Address" required />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small> 
+                            </div>
+                            
+                            <div class="form-control" id="city-container">
+                                <input type="text" name="city" id="city" placeholder="City" required />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small> 
+                            </div>
+
+                            <div class="form-control" id="province-container">
+                                <select name="province" id="province" required>
+                                    <option value="" disabled selected>Province</option>
+                                    <option value="eastern-cape">Eastern Cape</option>
+                                    <option value="free-state">Free State</option>
+                                    <option value="gauteng">Gauteng</option>
+                                    <option value="kwazulu-natal">Kwazulu-Natal</option>
+                                    <option value="limpopo">Limpopo</option>
+                                    <option value="mpumalanga">Mpumalanga</option>
+                                    <option value="north-west">North West</option>
+                                    <option value="northern-cape">Northern Cape</option>
+                                    <option value="western-cape">Western Cape</option>
+                                </select>
+                                <small>Error message</small> 
+                            </div>
+
+                            <div class="form-control" id="postal-code-container">
+                                <input type="text" name="postal-code" id="postal-code" maxlength="6" placeholder="Postal Code" required />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small> 
+                            </div>
+                            
+                            <div class="form-control" id="number-container">
+                                <input type="tel" name="number" id="number" maxlength="10" placeholder="Phone number" />
+                                <p class="checkmark">&check;</p>
+                                <p class="exclamation">!</p>
+                                <small>Error message</small>
+                            </div>
+
+                            <h2 id="shipping-heading">Shipping method</h2>
+                            <div id="shipping-container">
+                                <label for="standard" class="radio">
+                                    <input type="radio" name="shipping-method" value="standard" id="standard" class="radio-input" checked />
+                                    <div class="radio-circle"></div>
+                                    Standard (5-7 Days)
+                                </label> 
+                                <label for="express" class="radio">
+                                    <input type="radio" name="shipping-method" value="express" id="express" class="radio-input" />
+                                    <div class="radio-circle"></div>
+                                    Express (2-3 Days)
+                                </label> 
+                                <label for="premium" class="radio">
+                                    <input type="radio" name="shipping-method" value="premium" id="premium" class="radio-input" />
+                                    <div class="radio-circle"></div>
+                                    Premium (Next day)
+                                </label>      
+                            </div>     
+                        </fieldset>
+
+                        <fieldset class="submit">
+                            <input class="button" type="reset" />
+                            <input class="button" type="submit" value="Purchase" id="submit" />
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <!--JavaScript Link-->    
+        <script src="script.js"></script> 
+    </body>
+</html>
